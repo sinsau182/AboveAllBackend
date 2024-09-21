@@ -38,7 +38,6 @@ const signup = async (req, res, next) => {
 
 const signin = async (req, res, next) => {
     try {
-        console.log(req.user,'----------------------');
     const {id, name, email, role } = req.user;
     const token = req.user.toAuthJSON();
     
